@@ -1,0 +1,256 @@
+/* ============================
+   DEMOS PAGE STYLES
+   ============================ */
+
+/* Hero (compact) */
+.demos-hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 120px 24px 60px;
+}
+
+.demos-hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.demos-hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  margin-top: 12px;
+}
+
+/* Filter bar */
+.filter-bar {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--accent-border);
+  padding: 16px 0;
+  position: sticky;
+  top: 70px;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filter-tab {
+  background: var(--bg-card);
+  border: 1px solid var(--accent-border);
+  border-radius: 50px;
+  padding: 10px 24px;
+  color: var(--text-secondary);
+  font-family: var(--font);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.filter-tab:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.filter-tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg-primary);
+  box-shadow: 0 0 16px var(--accent-glow);
+}
+
+/* Demo grid */
+.demos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* Demo cards */
+.demo-card {
+  background: var(--bg-card);
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  position: relative;
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+}
+
+.demo-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent);
+  box-shadow: 0 0 24px var(--accent-glow);
+  transform: translateY(-4px);
+  color: inherit;
+}
+
+.demo-card.hidden {
+  display: none;
+}
+
+/* Badge */
+.demo-card-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--accent);
+  color: var(--bg-primary);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+.video-badge {
+  background: #a855f7;
+}
+
+.repo-badge {
+  background: #10b981;
+}
+
+/* Icon */
+.demo-card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+/* Card content */
+.demo-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+
+.demo-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* Tags */
+.demo-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.demo-card-tags span {
+  background: var(--accent-dim);
+  border: 1px solid var(--accent-border);
+  border-radius: 50px;
+  padding: 4px 14px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+/* Link text */
+.demo-card-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  transition: all var(--transition);
+}
+
+.demo-card:hover .demo-card-link {
+  letter-spacing: 0.5px;
+}
+
+/* Video cards */
+.video-embed {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-embed iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 8px;
+}
+
+.video-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-card-hover) 100%);
+  border: 1px dashed var(--accent-border);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.play-button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--accent-dim);
+  border: 2px solid var(--accent-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--accent);
+  transition: all var(--transition);
+}
+
+.demo-card:hover .play-button {
+  background: var(--accent);
+  color: var(--bg-primary);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.video-placeholder p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+@media (max-width: 768px) {
+  .demos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .demos-hero {
+    min-height: 40vh;
+    padding: 100px 20px 40px;
+  }
+
+  .filter-tabs {
+    gap: 8px;
+  }
+
+  .filter-tab {
+    padding: 8px 18px;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Demos & Projects by Abe Abraham, Senior Cloud Solutions Architect." />
+  <title>Demos | Abe Abraham</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="demos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Abe<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#live-demos">Live Demos</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="demos-hero">
+    <div class="demos-hero-content">
+      <p class="hero-greeting">DEMOS &amp; PROJECTS</p>
+      <h1 class="hero-name">What I've Built</h1>
+      <p class="demos-hero-subtitle">Live demos, video walkthroughs, and open-source projects</p>
+    </div>
+    <div class="hero-glow"></div>
+  </header>
+
+  <!-- ===== FILTER TABS ===== -->
+  <section class="filter-bar">
+    <div class="container">
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="live">Live Demos</button>
+        <button class="filter-tab" data-filter="video">Videos</button>
+        <button class="filter-tab" data-filter="repo">Projects</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIVE DEMOS ===== -->
+  <section class="section" id="live-demos">
+    <div class="container">
+      <h2 class="section-title">Live Demos</h2>
+      <div class="demos-grid">
+
+        <a href="#" class="demo-card" data-category="live" target="_blank" rel="noopener noreferrer">
+          <div class="demo-card-badge">Live</div>
+          <div class="demo-card-icon">🤖</div>
+          <h3>AI Agent Chat</h3>
+          <p>An interactive AI agent built on Azure AI Foundry with RAG and tool calling.</p>
+          <div class="demo-card-tags">
+            <span>Azure AI</span><span>Foundry</span><span>RAG</span>
+          </div>
+          <span class="demo-card-link">Launch Demo →</span>
+        </a>
+
+        <a href="#" class="demo-card" data-category="live" target="_blank" rel="noopener noreferrer">
+          <div class="demo-card-badge">Live</div>
+          <div class="demo-card-icon">📊</div>
+          <h3>Copilot Metrics Dashboard</h3>
+          <p>Real-time dashboard tracking GitHub Copilot adoption and productivity metrics.</p>
+          <div class="demo-card-tags">
+            <span>GitHub</span><span>Copilot</span><span>Analytics</span>
+          </div>
+          <span class="demo-card-link">Launch Demo →</span>
+        </a>
+
+        <a href="#" class="demo-card" data-category="live" target="_blank" rel="noopener noreferrer">
+          <div class="demo-card-badge">Live</div>
+          <div class="demo-card-icon">☁️</div>
+          <h3>Cloud Architecture Visualizer</h3>
+          <p>Interactive tool for visualizing Azure cloud architecture diagrams.</p>
+          <div class="demo-card-tags">
+            <span>Azure</span><span>Architecture</span><span>Visualization</span>
+          </div>
+          <span class="demo-card-link">Launch Demo →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO DEMOS ===== -->
+  <section class="section section-alt" id="videos">
+    <div class="container">
+      <h2 class="section-title">Video Walkthroughs</h2>
+      <div class="demos-grid">
+
+        <div class="demo-card video-card" data-category="video">
+          <div class="demo-card-badge video-badge">Video</div>
+          <div class="video-embed">
+            <!-- Replace src with your actual video embed URL -->
+            <div class="video-placeholder">
+              <div class="play-button">▶</div>
+              <p>Video Coming Soon</p>
+            </div>
+          </div>
+          <h3>Building AI Agents on Azure Foundry</h3>
+          <p>End-to-end walkthrough of creating, deploying, and evaluating an AI agent.</p>
+          <div class="demo-card-tags">
+            <span>Azure AI</span><span>Tutorial</span>
+          </div>
+        </div>
+
+        <div class="demo-card video-card" data-category="video">
+          <div class="demo-card-badge video-badge">Video</div>
+          <div class="video-embed">
+            <div class="video-placeholder">
+              <div class="play-button">▶</div>
+              <p>Video Coming Soon</p>
+            </div>
+          </div>
+          <h3>GitHub Copilot Adoption at Scale</h3>
+          <p>Strategies and lessons learned from leading Copilot adoption in enterprise teams.</p>
+          <div class="demo-card-tags">
+            <span>Copilot</span><span>Enterprise</span>
+          </div>
+        </div>
+
+        <div class="demo-card video-card" data-category="video">
+          <div class="demo-card-badge video-badge">Video</div>
+          <div class="video-embed">
+            <div class="video-placeholder">
+              <div class="play-button">▶</div>
+              <p>Video Coming Soon</p>
+            </div>
+          </div>
+          <h3>RAG Patterns with Azure AI Search</h3>
+          <p>Deep dive into retrieval-augmented generation using Azure AI Search and OpenAI.</p>
+          <div class="demo-card-tags">
+            <span>RAG</span><span>AI Search</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS / REPOS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Open Source &amp; Projects</h2>
+      <div class="demos-grid">
+
+        <a href="#" class="demo-card repo-card" data-category="repo" target="_blank" rel="noopener noreferrer">
+          <div class="demo-card-badge repo-badge">Repo</div>
+          <div class="demo-card-icon">🛠️</div>
+          <h3>AI Agent Starter Kit</h3>
+          <p>Boilerplate for building AI agents with Azure AI Foundry, including tool calling, RAG, and evaluation.</p>
+          <div class="demo-card-tags">
+            <span>Python</span><span>Azure</span><span>Template</span>
+          </div>
+          <span class="demo-card-link">View on GitHub →</span>
+        </a>
+
+        <a href="#" class="demo-card repo-card" data-category="repo" target="_blank" rel="noopener noreferrer">
+          <div class="demo-card-badge repo-badge">Repo</div>
+          <div class="demo-card-icon">📈</div>
+          <h3>Copilot Metrics Dashboard</h3>
+          <p>Open-source dashboard for tracking and visualizing GitHub Copilot usage across an organization.</p>
+          <div class="demo-card-tags">
+            <span>TypeScript</span><span>React</span><span>GitHub API</span>
+          </div>
+          <span class="demo-card-link">View on GitHub →</span>
+        </a>
+
+        <a href="#" class="demo-card repo-card" data-category="repo" target="_blank" rel="noopener noreferrer">
+          <div class="demo-card-badge repo-badge">Repo</div>
+          <div class="demo-card-icon">🔍</div>
+          <h3>Azure Monitoring Solution</h3>
+          <p>Comprehensive observability setup with Azure Monitor, App Insights, and custom KQL dashboards.</p>
+          <div class="demo-card-tags">
+            <span>Bicep</span><span>KQL</span><span>Monitoring</span>
+          </div>
+          <span class="demo-card-link">View on GitHub →</span>
+        </a>
+
+        <a href="#" class="demo-card repo-card" data-category="repo" target="_blank" rel="noopener noreferrer">
+          <div class="demo-card-badge repo-badge">Repo</div>
+          <div class="demo-card-icon">🌐</div>
+          <h3>World TV</h3>
+          <p>A web app for browsing and streaming international TV channels from around the world.</p>
+          <div class="demo-card-tags">
+            <span>JavaScript</span><span>Web</span><span>Media</span>
+          </div>
+          <span class="demo-card-link">View on GitHub →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Abe Abraham. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="demos.js"></script>
+</body>
+</html>
