@@ -30,10 +30,14 @@
 
   <!-- ===== HERO ===== -->
   <header class="hero" id="hero">
-    <div class="hero-content">
+    <canvas class="hero-particles" id="particleCanvas"></canvas>
+    <div class="hero-gradient"></div>
+    <div class="hero-content" data-parallax="0.3">
       <p class="hero-greeting">Hello, I'm</p>
       <h1 class="hero-name">Abe Abraham</h1>
-      <p class="hero-tagline">Senior Cloud Solutions Architect · Cloud &amp; AI Apps · Financial Services · GitHub Copilot Adoption Lead</p>
+      <p class="hero-tagline">
+        <span class="typewriter" id="typewriter"></span><span class="typewriter-cursor">|</span>
+      </p>
       <div class="hero-cta">
         <a href="#about" class="btn btn-primary">Learn More</a>
         <a href="#connect" class="btn btn-outline">Get in Touch</a>
