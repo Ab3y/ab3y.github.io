@@ -123,6 +123,11 @@
   background: #a855f7;
 }
 
+.pending-badge {
+  background: #64748b;
+  color: #fff;
+}
+
 .repo-badge {
   background: #10b981;
 }
