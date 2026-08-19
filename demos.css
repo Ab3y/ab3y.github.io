@@ -77,6 +77,20 @@
   gap: 24px;
 }
 
+.project-group + .project-group {
+  margin-top: 56px;
+}
+
+.project-group.hidden {
+  display: none;
+}
+
+.project-group-title {
+  margin: 0 0 24px;
+  color: var(--text-primary);
+  font-size: 1.35rem;
+}
+
 /* Demo cards */
 .demo-card {
   background: var(--bg-card);

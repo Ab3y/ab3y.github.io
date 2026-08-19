@@ -21,6 +21,15 @@ navLinks.querySelectorAll('a').forEach(link => {
    ============================ */
 const filterTabs = document.querySelectorAll('.filter-tab');
 const demoCards = document.querySelectorAll('.demo-card');
+const projectGroups = document.querySelectorAll('.project-group');
+
+function updateProjectGroups() {
+  projectGroups.forEach(group => {
+    const hasVisibleCards = [...group.querySelectorAll('.demo-card')]
+      .some(card => !card.classList.contains('hidden'));
+    group.classList.toggle('hidden', !hasVisibleCards);
+  });
+}
 
 filterTabs.forEach(tab => {
   tab.addEventListener('click', () => {
@@ -36,6 +45,8 @@ filterTabs.forEach(tab => {
         card.classList.add('hidden');
       }
     });
+
+    updateProjectGroups();
   });
 });
 
