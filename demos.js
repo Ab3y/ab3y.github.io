@@ -22,6 +22,8 @@ navLinks.querySelectorAll('a').forEach(link => {
 const filterTabs = document.querySelectorAll('.filter-tab');
 const demoCards = document.querySelectorAll('.demo-card');
 const projectGroups = document.querySelectorAll('.project-group');
+const videosSection = document.getElementById('videos');
+const projectsSection = document.getElementById('projects');
 
 function updateProjectGroups() {
   projectGroups.forEach(group => {
@@ -37,6 +39,12 @@ filterTabs.forEach(tab => {
     tab.classList.add('active');
 
     const filter = tab.getAttribute('data-filter');
+
+    videosSection.classList.toggle(
+      'filter-hidden',
+      filter !== 'all' && filter !== 'video'
+    );
+    projectsSection.classList.toggle('filter-hidden', filter === 'video');
 
     demoCards.forEach(card => {
       if (filter === 'all' || card.getAttribute('data-category') === filter) {

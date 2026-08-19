@@ -85,6 +85,10 @@
   display: none;
 }
 
+.section.filter-hidden {
+  display: none;
+}
+
 .project-group-title {
   margin: 0 0 24px;
   color: var(--text-primary);
